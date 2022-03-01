@@ -1,0 +1,31 @@
+ body {
+      font-family: "Open Sans", sans-serif;
+    }
+    h1 {
+      color: #ffffff;
+    }
+
+    h2 {
+      color: #ffffff;
+    }
+
+    .container {
+      background: #212529;
+    }
+
+    .temperature {
+      color: #ffffff;
+      display: block;
+      font-size: 48px;
+    
+    }
+
+    .units {
+      color: #ffffff;
+      display: block;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .icon {
+      font-family: var(--bs-body-font-family);
+    }

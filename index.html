@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <section class="row">
+        <div class="col-6 pt-3 ps-3 pe-3">
+          <h1 id="city"></h1>
+          <h2 id="date"></h2>
+          <span class="units">C °| F °</span>
+        </div>
+        <div class="col-6 pt-3 ps-3 pe-3">
+          <form id="search-form" class="float-end">
+            <input
+              type="text"
+              placeholder="Search for a city"
+              autocomplete="off"
+              autofocus="on"
+              id="city-input"
+            />
+            <input type="submit" value="Search" class="btn btn-light" />
+            </div>
+          </form>
+        
+        <div class="col-12 ps-3 pe-3 mb-4">
+          <span class="temperature fw-bold" id="temperature">°</span>
+          
+        </div>
+        <div class="col-12 card text-white bg-dark">
+          <h3 class="card-header pb-2 border-bottom fw-light">
+            Weather Overview
+          </h3>
+          <div class="card-body">
+            <p id="description">
+            
+            </p>
+            <ul class="card-title">
+              <li><strong>Humidity:</strong> <span id="humidity">%</span></li>
+              <li><strong>Wind:</strong> <span id="wind">km/h</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="row">
+        <div class="col-12 text-white">
+          <h3 class="card-header pb-2 border-bottom fw-light">
+            5 Day Forecast
+          </h3>
+        </div>
+        <div class="col-12 text-white">
+          <table class="table table-dark table-striped table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Forecast</th>
+                <th scope="col"><span class="text-nowrap">Next day</span></th>
+                <th scope="col">Sun.</th>
+                <th scope="col">Mon.</th>
+                <th scope="col">Tues.</th>
+                <th scope="col">Wed.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">High</th>
+                <td>32°F</td>
+                <td>28°F</td>
+                <td>37°F</td>
+                <td>46°F</td>
+                <td>15°F</td>
+              </tr>
+              <tr>
+                <th scope="row">Low</th>
+                <td >10°F</td>
+                <td>12°F</td>
+                <td>15°F</td>
+                <td>29°F</td>
+                <td>7°F</td>
+              </tr>
+              <tr>
+                <th scope="row">Weather</th>
+                <td class="icon">☀</td>
+                <td class="icon">🌤</td>
+                <td class="icon">🌩</td>
+                <td class="icon">🌧</td>
+                <td class="icon">🌨</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+     <script src="src/script.js"></script>
+  </body>
+</html>

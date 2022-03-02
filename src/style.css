@@ -1,4 +1,12 @@
-    body {
+.link {
+  display: block;
+  text-align: center;
+}
+.linkName {
+  display: block;
+  text-align: center;
+}
+   body {
       font-family: "Open Sans", sans-serif;
     }
     h1 {

@@ -56,20 +56,20 @@ let apiKey = "0a20d6fab116445cdaeb7f22b34b36f3";
 
       search("Philadelphia")
 
-     // function convertToFahrenheit(event) {
-      //  event.preventDefault();
+      function convertToFahrenheit(event) {
+        event.preventDefault();
       //  let temperatureElement = document.querySelector("#temperature");
       //  temperatureElement.innerHTML = 19
-     // }
+      }
 
 //function convertToCelsius(event) {
-       // event.preventDefault();
+        //event.preventDefault();
        // let temperatureElement = document.querySelector("#temperature");
       //  temperatureElement.innerHTML= 66
         
-     // }
-     // let fahrenheitLink = document.querySelector("#fahrenheit-link");
-     // fahrenheitLink.addEventListener("click", convertToFahrenheit);
+      //}
+      let fahrenheitLink = document.querySelector("#fahrenheit-link");
+      fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
      // let celsiusLink = document.querySelector("#celsius-link");
    // celsiusLink.addEventListener("click", convertToCelsius);

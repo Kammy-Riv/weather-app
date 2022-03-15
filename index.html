@@ -18,14 +18,14 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <title>Real project</title>
   </head>
   <body>
     <div class="container">
       <section class="row">
         <div class="col-6 pt-3 ps-3 pe-3">
-          <h1 id="city"></h1>
-          <h2 id="date"></h2>
+          <h2 id="city"></h2>
+          <h3 id="date"></h3>
           <span class="units"><a href="#" id="celsius-link" class="active">C °</a> | <a href="#" id="fahrenheit-link"> F °</a></span>
           
         </div>
@@ -51,6 +51,22 @@
             Weather Overview
           </h3>
           <div class="card-body">
+
+ <div class="card-body">
+          <div class="row">
+          <div class="clearfix weather-temperature">
+            <img
+            src=""
+            alt="Clear"
+            id="icon"
+            class="float-left"
+            />
+          </div>
+        </div>
+
+        </div>
+
+
             <p id="description">
             
             </p>
@@ -69,15 +85,6 @@
         </div>
         <div class="col-12 text-white">
           <table class="table table-dark table-striped table-hover">
-            <thead>
-              <tr>
-                <th scope="col">Forecast</th>
-                <th scope="col"><span class="text-nowrap">Next day</span></th>
-                <th scope="col">Sun.</th>
-                <th scope="col">Mon.</th>
-                <th scope="col">Tues.</th>
-                <th scope="col">Wed.</th>
-              </tr>
             </thead>
             <tbody>
               <tr>
@@ -90,7 +97,7 @@
               </tr>
               <tr>
                 <th scope="row">Low</th>
-                <td >10°F</td>
+                <td>10°F</td>
                 <td>12°F</td>
                 <td>15°F</td>
                 <td>29°F</td>
@@ -98,11 +105,11 @@
               </tr>
               <tr>
                 <th scope="row">Weather</th>
-                <td class="icon">☀</td>
-                <td class="icon">🌤</td>
-                <td class="icon">🌩</td>
-                <td class="icon">🌧</td>
-                <td class="icon">🌨</td>
+                <td >☀</td>
+                <td >🌤</td>
+                <td >🌩</td>
+                <td >🌧</td>
+                <td >🌨</td>
               </tr>
             </tbody>
           </table>
